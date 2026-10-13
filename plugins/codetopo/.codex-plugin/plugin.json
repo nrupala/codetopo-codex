@@ -1,0 +1,40 @@
+{
+  "name": "codetopo",
+  "version": "0.3.4",
+  "description": "Domain-blind code graphs for AI agents: symbols, calls, blast radius, proof-checked snapshots.",
+  "author": {
+    "name": "Nrupal Akolkar",
+    "email": "info@nrupalakolkar.com",
+    "url": "https://github.com/nrupala"
+  },
+  "homepage": "https://aimlds.org/codetopo",
+  "repository": "https://github.com/nrupala/codetopo",
+  "license": "AGPL-3.0-or-later",
+  "keywords": [
+    "code-graph",
+    "mcp",
+    "static-analysis",
+    "symbols",
+    "blast-radius",
+    "codebase"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Codetopo",
+    "shortDescription": "Queryable code graphs: symbols, calls, blast radius.",
+    "longDescription": "codetopo indexes a source repository once into a local graph database, then answers structural questions as data over MCP: find symbols, see what calls what, measure the blast radius of a change, walk the neighborhood of a node, find the path between two modules, and export a snapshot bound to a tamper-evident audit chain that can be verified later. It is domain-blind by design: structure only, no scores or opinions about what the code means. The server runs locally over stdio and parses your code; it never executes it and never modifies it.",
+    "developerName": "Nrupal Akolkar",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://aimlds.org/codetopo",
+    "defaultPrompt": [
+      "Use codetopo to index this repository and show what calls this function.",
+      "Use codetopo to find the blast radius of changing this symbol.",
+      "Use codetopo to show how these two modules are connected."
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "codetopo-codex",
+  "interface": {
+    "displayName": "Codetopo"
+  },
+  "plugins": [
+    {
+      "name": "codetopo",
+      "description": "Domain-blind code graphs for AI agents: symbols, calls, blast radius, proof-checked snapshots.",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codetopo"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

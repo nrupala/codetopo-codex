@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "codetopo": {
+      "command": "codetopo-mcp",
+      "args": [],
+      "type": "stdio"
+    }
+  }
+}
