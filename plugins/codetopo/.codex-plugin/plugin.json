@@ -1,6 +1,6 @@
 {
   "name": "codetopo",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Domain-blind code graphs for AI agents: symbols, calls, blast radius, proof-checked snapshots.",
   "author": {
     "name": "Nrupal Akolkar",
