@@ -1,0 +1,11 @@
+codetopo Codex marketplace
+Copyright 2026 Nrupal Akolkar
+
+Licensed under AGPL-3.0-or-later — see the LICENSE file in this repository.
+
+## Third-party components
+
+No third-party components are bundled in this repository. The marketplace
+distributes only this project's own plugin packaging (manifests and a skill);
+the plugin runs the `codetopo-mcp` binary, which the user installs separately
+from the nrupala/codetopo project under the same licence.
