@@ -42,11 +42,19 @@ session afterwards so the bundled skill and MCP tools load.
 - A `codetopo` skill that walks the agent through the index → search →
   query loop and the working rules for trustworthy answers.
 
+## Security
+
+Report vulnerabilities privately through GitHub Private Vulnerability Reporting — see [SECURITY.md](SECURITY.md).
+
+## Contributing
+
+Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). The marketplace's manifests are validated by the test suite described in [TEST-PLAN.md](TEST-PLAN.md).
+
 ## License
 
-codetopo is licensed under AGPL-3.0-or-later. See the
-[codetopo repository](https://github.com/nrupala/codetopo) for the full
-license text and source.
+codetopo is licensed under AGPL-3.0-or-later. See [LICENSE](LICENSE) in this
+repository for the full license text; the server source lives in the
+[codetopo repository](https://github.com/nrupala/codetopo).
 
 Owned by Nrupal Akolkar · Built with Muse by Meta
 
