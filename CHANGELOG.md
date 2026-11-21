@@ -7,6 +7,16 @@ one exists.
 
 ## [Unreleased]
 
+## [0.10.0] — 2026-11-20
+
+Rebundled onto the codetopo 0.10.0 engine.
+
+### Changed
+
+- Plugin version 0.10.0, matching the codetopo engine release.
+- The MCP server now exposes 21 tools (was 12): diagnostics, rank, hotspot diagnosis, index diff, coupling metrics, communities, topological sort, render, and history join the original twelve.
+- The engine reads 19 code languages (was 3) and carries an English document profile.
+
 ## [0.5.0] — 2026-11-06
 
 First GitHub Release of the already-published marketplace, at the plugin version

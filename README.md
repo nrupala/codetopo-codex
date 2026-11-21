@@ -36,9 +36,12 @@ session afterwards so the bundled skill and MCP tools load.
 
 ## What you get
 
-- The `codetopo` MCP server (local stdio), with 12 tools: index, stats,
+- The `codetopo` MCP server (local stdio), with 21 tools: index, stats,
   search symbols, get symbol, descendants, ancestors, blast radius,
-  neighborhood, path, snapshot, verify, and describe schema.
+  neighborhood, path, snapshot, verify, describe schema, diagnostics,
+  rank, diagnose hotspot, diff, metrics, communities, topo sort,
+  render, and history. The engine reads 19 code languages and carries
+  an English document profile.
 - A `codetopo` skill that walks the agent through the index → search →
   query loop and the working rules for trustworthy answers.
 

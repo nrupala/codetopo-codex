@@ -9,7 +9,7 @@ codetopo turns a source repository into a queryable code graph: symbols,
 calls, imports, references, and structure, stored in a local graph database.
 It answers structural questions as data. It is deliberately domain-blind —
 no scores, no rankings, no opinions about what the code means — and it
-parses code (Rust and TypeScript/JavaScript, via tree-sitter) without ever
+parses code (19 code languages, via tree-sitter) without ever
 executing it.
 
 ## The loop
@@ -29,7 +29,7 @@ executing it.
    again against the same `db_path` before answering questions about the
    current state.
 
-## The 12 tools
+## The 21 tools
 
 | Tool | Use it for |
 | --- | --- |
@@ -45,6 +45,15 @@ executing it.
 | `codetopo_snapshot` | Export the whole graph as a portable snapshot, bound to the audit head at export time. |
 | `codetopo_verify` | Verify the tamper-evident audit chain of an index. Run it before trusting a snapshot or an index you did not just build. |
 | `codetopo_describe_schema` | The schema the server speaks: node and edge kinds, tier rules, query vocabulary. Needs no database — call it whenever you are unsure what a kind or tier means. |
+| `codetopo_diagnostics` | The diagnostics recorded when the index was built — dependency cycles, multi-definitions, unresolved calls — as data. |
+| `codetopo_rank` | Top symbols by fan-in, fan-out, blast-radius size, complexity, or a named centrality measure; the method is stated in the result. |
+| `codetopo_diagnose_hotspot` | Composite read: top-ranked symbols, each with blast-radius and neighborhood sizes. |
+| `codetopo_diff` | Compare two indexes or snapshots: added, removed, and changed nodes and edges, plus blast-radius movement. |
+| `codetopo_metrics` | Coupling and cohesion measurements per type and package, methods stated. Measurements only — no thresholds, no verdicts. |
+| `codetopo_communities` | The Leiden partition of the dependency graph: community sizes, internal and cut edges, node assignments. |
+| `codetopo_topo_sort` | The safe change order: topological order of the condensed dependency DAG. |
+| `codetopo_render` | The graph's layout specification (layered or force), deterministic for a given index. |
+| `codetopo_history` | Change hotspots and change coupling over the working tree's git history, both factors stated. |
 
 ## Working rules
 
